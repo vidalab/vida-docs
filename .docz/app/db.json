@@ -154,6 +154,27 @@
           }
         ]
       }
+    },
+    {
+      "key": "src/tutorials/create-dashboard-with-netlify.mdx",
+      "value": {
+        "name": "Create Dashboard with Netlify",
+        "route": "/tutorials-create-dashboard-with-netlify",
+        "menu": "Tutorials",
+        "id": "9cf9288fbb07c281608d47c502cff732",
+        "filepath": "src/tutorials/create-dashboard-with-netlify.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-dashboard-with-netlify.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-tutorials-create-dashboard-with-netlify",
+        "headings": [
+          {
+            "slug": "create-dashboard-with-netlify",
+            "depth": 1,
+            "value": "Create Dashboard with Netlify"
+          }
+        ]
+      }
     }
   ],
   "props": [
@@ -235,6 +256,33 @@
               "required": false,
               "type": {
                 "name": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/tutorials/create-dashboard-with-netlify.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Create",
+          "methods": [],
+          "props": {
+            "kind": {
+              "defaultValue": {
+                "value": "info"
+              },
+              "description": "Set this to change alert kind",
+              "name": "kind",
+              "parent": {
+                "fileName": "src/tutorials/create-dashboard-with-netlify.tsx",
+                "name": "CreateProps"
+              },
+              "required": true,
+              "type": {
+                "name": "\"info\" | \"positive\" | \"negative\" | \"warning\""
               }
             }
           }
