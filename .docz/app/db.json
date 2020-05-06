@@ -1,6 +1,6 @@
 {
   "config": {
-    "title": "Docz Example Typescript",
+    "title": "Vida Documentation",
     "description": "My awesome app using docz",
     "menu": [],
     "version": "2.0.0-rc.41",
@@ -25,19 +25,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "typescript-docz-example",
+            "slug": "vida-documentation",
             "depth": 1,
-            "value": "Typescript Docz example"
-          },
-          {
-            "slug": "using-create-docz-app",
-            "depth": 2,
-            "value": "Using  create-docz-app"
-          },
-          {
-            "slug": "download-manually",
-            "depth": 2,
-            "value": "Download manually"
+            "value": "Vida Documentation"
           },
           {
             "slug": "setup",

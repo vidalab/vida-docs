@@ -1,20 +1,8 @@
-# Typescript Docz example
+# Vida Documentation
 
-## Using `create-docz-app`
+This repository contains documentation for Vida software.
 
-```sh
-npx create-docz-app docz-app-typescript --example typescript
-# or
-yarn create docz-app docz-app-typescript --example typescript
-```
-
-## Download manually
-
-```sh
-curl https://codeload.github.com/doczjs/docz/tar.gz/master | tar -xz --strip=2 docz-master/examples/typescript
-mv typescript docz-typescript-example
-cd docz-typescript-example
-```
+Vida software allows users to create visualization dashboards with JSON files.
 
 ## Setup
 
