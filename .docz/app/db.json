@@ -6,7 +6,16 @@
     "version": "2.0.0-rc.41",
     "repository": null,
     "native": false,
-    "themeConfig": {},
+    "themeConfig": {
+      "styles": {
+        "body": {
+          "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "root": {
+          "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        }
+      }
+    },
     "separator": "-",
     "typescript": true
   },
@@ -61,98 +70,31 @@
             "value": "Getting Started"
           },
           {
-            "slug": "consistency",
+            "slug": "run-vida-for-development",
             "depth": 2,
-            "value": "Consistency"
+            "value": "Run Vida for development"
+          },
+          {
+            "slug": "run-vida-as-a-standalone-dashboard",
+            "depth": 2,
+            "value": "Run Vida as a standalone dashboard:"
           }
         ]
       }
     },
     {
-      "key": "src/components/Alert.mdx",
+      "key": "src/json-format/simple.mdx",
       "value": {
-        "name": "Alert",
-        "menu": "Components",
-        "id": "411d2842c3d65e6ee7d3ec119ed4c5a0",
-        "filepath": "src/components/Alert.mdx",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/components/Alert.mdx",
+        "name": "Simple",
+        "menu": "JSON Format",
+        "id": "b7993f585e0b84aeeb7344721dcbc6c2",
+        "filepath": "src/json-format/simple.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/simple.mdx",
         "link": "",
         "hidden": false,
-        "slug": "src-components-alert",
-        "route": "/src-components-alert",
-        "headings": [
-          {
-            "slug": "alert",
-            "depth": 1,
-            "value": "Alert"
-          },
-          {
-            "slug": "properties",
-            "depth": 2,
-            "value": "Properties"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "using-different-kinds",
-            "depth": 2,
-            "value": "Using different kinds"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/Button.mdx",
-      "value": {
-        "name": "Button",
-        "menu": "Components",
-        "id": "94c04b4e4bd29ffbdeec8755c1a4c04f",
-        "filepath": "src/components/Button.mdx",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/components/Button.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "src-components-button",
-        "route": "/src-components-button",
-        "headings": [
-          {
-            "slug": "button",
-            "depth": 1,
-            "value": "Button"
-          },
-          {
-            "slug": "best-practices",
-            "depth": 3,
-            "value": "Best practices"
-          },
-          {
-            "slug": "properties",
-            "depth": 2,
-            "value": "Properties"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "with-different-sizes",
-            "depth": 2,
-            "value": "With different sizes"
-          },
-          {
-            "slug": "with-different-colors",
-            "depth": 2,
-            "value": "With different colors"
-          },
-          {
-            "slug": "outlined",
-            "depth": 2,
-            "value": "Outlined"
-          }
-        ]
+        "slug": "src-json-format-simple",
+        "route": "/src-json-format-simple",
+        "headings": []
       }
     },
     {
@@ -178,90 +120,6 @@
     }
   ],
   "props": [
-    {
-      "key": "src/components/Alert.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Alert",
-          "methods": [],
-          "props": {
-            "kind": {
-              "defaultValue": {
-                "value": "info"
-              },
-              "description": "Set this to change alert kind",
-              "name": "kind",
-              "parent": {
-                "fileName": "src/components/Alert.tsx",
-                "name": "AlertProps"
-              },
-              "required": true,
-              "type": {
-                "name": "\"info\" | \"positive\" | \"negative\" | \"warning\""
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "src/components/Button.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Button",
-          "methods": [],
-          "props": {
-            "scale": {
-              "defaultValue": {
-                "value": "normal"
-              },
-              "description": "",
-              "name": "scale",
-              "parent": {
-                "fileName": "src/components/Button.tsx",
-                "name": "ButtonProps"
-              },
-              "required": false,
-              "type": {
-                "name": "\"small\" | \"normal\" | \"big\""
-              }
-            },
-            "kind": {
-              "defaultValue": {
-                "value": "primary"
-              },
-              "description": "",
-              "name": "kind",
-              "parent": {
-                "fileName": "src/components/Button.tsx",
-                "name": "ButtonProps"
-              },
-              "required": false,
-              "type": {
-                "name": "\"primary\" | \"secondary\" | \"cancel\" | \"dark\" | \"gray\""
-              }
-            },
-            "outline": {
-              "defaultValue": {
-                "value": false
-              },
-              "description": "",
-              "name": "outline",
-              "parent": {
-                "fileName": "src/components/Button.tsx",
-                "name": "ButtonProps"
-              },
-              "required": false,
-              "type": {
-                "name": "boolean"
-              }
-            }
-          }
-        }
-      ]
-    },
     {
       "key": "src/tutorials/create-dashboard-with-netlify.tsx",
       "value": [

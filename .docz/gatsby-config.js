@@ -33,7 +33,14 @@ const config = {
     {
       resolve: 'gatsby-theme-docz',
       options: {
-        themeConfig: {},
+        themeConfig: {
+          styles: {
+            body: {
+              fontFamily:
+                'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+            },
+          },
+        },
         src: './',
         gatsbyRoot: null,
         themesDir: 'src',
