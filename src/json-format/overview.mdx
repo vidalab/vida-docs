@@ -1,0 +1,44 @@
+---
+name: Overview
+menu: JSON Format
+---
+
+# Overview
+
+Vida allows users to turn in a JSON file into a data visualization dashboard.
+
+### JSON File
+
+```json
+{
+  "name": "Example Viz",
+  "description": "Example Viz",
+  "columns": 2,
+  "rows": 2,
+  "data": []
+  "charts": []
+}
+```
+
+A JSON file contains three groups of information: metadata, data, and charts.
+
+### Metadata
+
+This section is the highest level in the JSON file hierarchy. It contains information about the dashboard, like, name, description, dashboard layout.
+
+- name: name of the dashboard (optional).
+- description: description of the dashboard (optional). This information appears in the dashboard footer.
+- columns: number of columns in the dashboard (required).
+- rows: number of rows in the dashboard (required).
+- header: dashboard header (optional).
+  * text: displayed title of the dashboard.
+  * align: alignment of the above text. Options are: left, right, center.
+  * backgroundColor: backgroundColor of the header. For example: #82ca9d.
+
+### Data
+
+This section contains datasets used by a dashboard. It is an array of datasets. Each dataset is identified by its name. You can include the values of a dataset or specifies a URL. In the case of a URL, Vida will retrieve the data during load time. You can use this option to retrieve real-time information for your dashboard. See #Data documentation for more details.
+
+### Charts
+
+This section contains the description of charts in a dashboard. It is an array of charts. See #Charts documentation for more details.

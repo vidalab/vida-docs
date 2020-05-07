@@ -1,0 +1,38 @@
+---
+name: Data
+menu: JSON Format
+---
+
+# Data
+
+This section contains data for the charts in a dashboard. Here's an example:
+
+```json
+{
+  "data": [
+    {
+      "name": "states-current",
+      "url": "https://covidtracking.com/api/v1/states/current.json"
+    },
+    {
+      "name": "table",
+      "values": [
+        {
+          "name": "Page A", "uv": 4000, "pv": 2400, "amt": 2400
+        },
+        {
+          "name": "Page B", "uv": 3000, "pv": 1398, "amt": 2210
+        }
+      ]
+    }
+  ]
+}
+```
+
+Data contains an array of datasets. Each dataset has the below fields.
+
+* name: name of the dataset.
+* values: array of data values.
+* url: URL of the dataset.
+
+Field values or url need to exist.

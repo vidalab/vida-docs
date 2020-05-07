@@ -2,15 +2,22 @@
   "config": {
     "title": "Vida Documentation",
     "description": "My awesome app using docz",
-    "menu": [],
+    "menu": [
+      "Getting Started",
+      {
+        "name": "JSON Format",
+        "menu": [
+          "Overview",
+          "Data",
+          "Charts"
+        ]
+      }
+    ],
     "version": "2.0.0-rc.41",
     "repository": null,
     "native": false,
     "themeConfig": {
       "styles": {
-        "body": {
-          "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
-        },
         "root": {
           "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
         }
@@ -83,18 +90,127 @@
       }
     },
     {
-      "key": "src/json-format/simple.mdx",
+      "key": "src/json-format/charts.mdx",
       "value": {
-        "name": "Simple",
+        "name": "Charts",
         "menu": "JSON Format",
-        "id": "b7993f585e0b84aeeb7344721dcbc6c2",
-        "filepath": "src/json-format/simple.mdx",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/simple.mdx",
+        "id": "b8e28564f79cee97d56038b58ab8e453",
+        "filepath": "src/json-format/charts.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/charts.mdx",
         "link": "",
         "hidden": false,
-        "slug": "src-json-format-simple",
-        "route": "/src-json-format-simple",
+        "slug": "src-json-format-charts",
+        "route": "/src-json-format-charts",
+        "headings": [
+          {
+            "slug": "charts",
+            "depth": 1,
+            "value": "Charts"
+          },
+          {
+            "slug": "chart-types",
+            "depth": 3,
+            "value": "Chart Types"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/json-format/dashboard-layout.mdx",
+      "value": {
+        "name": "Dashboard Layout",
+        "menu": "JSON Format",
+        "id": "2ab3ab4a863eba7f5f0b886e25e5f276",
+        "filepath": "src/json-format/dashboard-layout.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/dashboard-layout.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-json-format-dashboard-layout",
+        "route": "/src-json-format-dashboard-layout",
+        "headings": [
+          {
+            "slug": "dashboard-layout",
+            "depth": 1,
+            "value": "Dashboard Layout"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/json-format/data.mdx",
+      "value": {
+        "name": "Data",
+        "menu": "JSON Format",
+        "id": "e4db9cc15fef52dbe6c09f441ad8eb25",
+        "filepath": "src/json-format/data.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/data.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-json-format-data",
+        "route": "/src-json-format-data",
+        "headings": [
+          {
+            "slug": "data",
+            "depth": 1,
+            "value": "Data"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/json-format/example.mdx",
+      "value": {
+        "name": "Example",
+        "menu": "JSON Format",
+        "id": "863e1841cd6ef843b1b08014ab29b568",
+        "filepath": "src/json-format/example.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/example.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-json-format-example",
+        "route": "/src-json-format-example",
         "headings": []
+      }
+    },
+    {
+      "key": "src/json-format/overview.mdx",
+      "value": {
+        "name": "Overview",
+        "menu": "JSON Format",
+        "id": "5de72135f44ca3e57348791a94401469",
+        "filepath": "src/json-format/overview.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/json-format/overview.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-json-format-overview",
+        "route": "/src-json-format-overview",
+        "headings": [
+          {
+            "slug": "overview",
+            "depth": 1,
+            "value": "Overview"
+          },
+          {
+            "slug": "json-file",
+            "depth": 3,
+            "value": "JSON File"
+          },
+          {
+            "slug": "metadata",
+            "depth": 3,
+            "value": "Metadata"
+          },
+          {
+            "slug": "data",
+            "depth": 3,
+            "value": "Data"
+          },
+          {
+            "slug": "charts",
+            "depth": 3,
+            "value": "Charts"
+          }
+        ]
       }
     },
     {
@@ -119,33 +235,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/tutorials/create-dashboard-with-netlify.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Create",
-          "methods": [],
-          "props": {
-            "kind": {
-              "defaultValue": {
-                "value": "info"
-              },
-              "description": "Set this to change alert kind",
-              "name": "kind",
-              "parent": {
-                "fileName": "src/tutorials/create-dashboard-with-netlify.tsx",
-                "name": "CreateProps"
-              },
-              "required": true,
-              "type": {
-                "name": "\"info\" | \"positive\" | \"negative\" | \"warning\""
-              }
-            }
-          }
-        }
-      ]
-    }
-  ]
+  "props": []
 }

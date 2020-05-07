@@ -1,0 +1,137 @@
+---
+name: Example
+menu: JSON Format
+---
+
+In this page, we show an example of a dashboard. It shows the data for COVID-19 trend in the United States.
+
+Here's the JSON data for the example.
+
+```json
+{
+  "name": "Covid Trend in the United States",
+  "description": "Data from covidtracking.com.",
+  "columns": 3,
+  "rows": 3,
+  "header": {
+    "align": "center",
+    "text": "Covid Trend in the United States",
+    "backgroundColor": "#82ca9d"
+  },
+  "data": [
+    {
+      "name": "states-current",
+      "url": "https://covidtracking.com/api/v1/states/current.json"
+    },
+    {
+      "name": "us-daily",
+      "url": "https://covidtracking.com/api/v1/us/daily.json"
+    }
+  ],
+  "charts": [
+    { "type": "horizontal-bar", "data": "states-current",
+      "title": "Cases by States",
+      "position": {
+        "columns": 1,
+        "rows": 3,
+        "x": 0,
+        "y": 0
+      },
+      "axes": {
+        "x": {
+          "label": "state",
+          "dataColumn": "state"
+        },
+        "y": {
+          "label": "count",
+          "dataColumns": [
+            {"name": "positive", "color": "#8884d8"},
+            {"name": "negative", "color": "#82ca9d"}
+          ]
+        }
+      }
+    },
+    {
+      "type": "line", "data": "us-daily",
+      "title": "Positive vs. Death Increase",
+      "position": {
+        "columns": 2,
+        "rows": 1,
+        "x": 1,
+        "y": 0
+      },
+      "axes": {
+        "x": {
+          "label": "date",
+          "dataColumn": "date",
+          "dataType": "time",
+          "dataFormat": "%Y%m%d",
+          "displayFormat": "%b %d",
+          "timePrecision": "day"
+        },
+        "y": {
+          "label": "count",
+          "dataColumns": [
+            {"name": "positiveIncrease", "color": "#8884d8"},
+            {"name": "deathIncrease", "color": "#82ca9d"}
+          ]
+        }
+      }
+    },
+    {
+      "type": "line", "data": "us-daily",
+      "title": "Positive vs. Hospitalized Increase",
+      "position": {
+        "columns": 2,
+        "rows": 1,
+        "x": 1,
+        "y": 1
+      },
+      "axes": {
+        "x": {
+          "label": "date",
+          "dataColumn": "date",
+          "dataType": "time",
+          "dataFormat": "%Y%m%d",
+          "displayFormat": "%b %d",
+          "timePrecision": "day"
+        },
+        "y": {
+          "label": "count",
+          "dataColumns": [
+            {"name": "positiveIncrease", "color": "#8884d8"},
+            {"name": "hospitalizedIncrease", "color": "#82ca9d"}
+          ]
+        }
+      }
+    },
+    {
+      "type": "line", "data": "us-daily",
+      "title": "Positive vs. Negative Increase",
+      "position": {
+        "columns": 2,
+        "rows": 1,
+        "x": 1,
+        "y": 2
+      },
+      "axes": {
+        "x": {
+          "label": "date",
+          "dataColumn": "date",
+          "dataType": "time",
+          "dataFormat": "%Y%m%d",
+          "displayFormat": "%b %d",
+          "timePrecision": "day"
+        },
+        "y": {
+          "label": "count",
+          "dataColumns": [
+            {"name": "positiveIncrease", "color": "#8884d8"},
+            {"name": "negativeIncrease", "color": "#82ca9d"}
+          ]
+        }
+      }
+    }
+  ]
+}
+```
