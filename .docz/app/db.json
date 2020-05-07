@@ -24,40 +24,12 @@
       }
     },
     "separator": "-",
-    "typescript": true
+    "typescript": true,
+    "ignore": [
+      "README.md"
+    ]
   },
   "entries": [
-    {
-      "key": "README.md",
-      "value": {
-        "id": "04c6e90faac2675aa89e2176d2eec7d8",
-        "filepath": "README.md",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/README.md",
-        "link": "",
-        "hidden": false,
-        "slug": "readme",
-        "route": "/readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "vida-documentation",
-            "depth": 1,
-            "value": "Vida Documentation"
-          },
-          {
-            "slug": "setup",
-            "depth": 2,
-            "value": "Setup"
-          },
-          {
-            "slug": "run",
-            "depth": 2,
-            "value": "Run"
-          }
-        ]
-      }
-    },
     {
       "key": "src/index.mdx",
       "value": {
@@ -214,22 +186,22 @@
       }
     },
     {
-      "key": "src/tutorials/create-dashboard-with-netlify.mdx",
+      "key": "src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
       "value": {
-        "name": "Create Dashboard with Netlify",
-        "route": "/tutorials-create-dashboard-with-netlify",
+        "name": "Create a Dashboard and Deploy to Netlify",
         "menu": "Tutorials",
-        "id": "9cf9288fbb07c281608d47c502cff732",
-        "filepath": "src/tutorials/create-dashboard-with-netlify.mdx",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-dashboard-with-netlify.mdx",
+        "id": "2ac6b3c88b637c1b602fea99042553d8",
+        "filepath": "src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
         "link": "",
         "hidden": false,
-        "slug": "src-tutorials-create-dashboard-with-netlify",
+        "slug": "src-tutorials-create-a-dashboard-and-deploy-to-netlify",
+        "route": "/src-tutorials-create-a-dashboard-and-deploy-to-netlify",
         "headings": [
           {
-            "slug": "create-dashboard-with-netlify",
+            "slug": "create-a-dashboard-and-deploy-to-netlify",
             "depth": 1,
-            "value": "Create Dashboard with Netlify"
+            "value": "Create a Dashboard and Deploy to Netlify"
           }
         ]
       }

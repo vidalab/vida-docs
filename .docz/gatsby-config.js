@@ -52,7 +52,7 @@ const config = {
         ],
         mdPlugins: [],
         hastPlugins: [],
-        ignore: [],
+        ignore: ['README.md'],
         typescript: true,
         ts: false,
         propsParser: true,

@@ -17,5 +17,8 @@ export default {
         "Charts"
       ]
     }
+  ],
+  ignore: [
+    "README.md"
   ]
 }
