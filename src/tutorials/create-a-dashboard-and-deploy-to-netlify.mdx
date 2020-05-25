@@ -4,3 +4,60 @@ menu: Tutorials
 ---
 
 # Create a Dashboard and Deploy to Netlify
+
+Vida is a software tool to create compelling dashboards quickly. You don't need to write code to build your dashboard. A JSON specification file is used to describe a dashboard. You can specify data sources, charts, and layout. Vida software will read the specification file and render your dashboard.
+
+In this tutorial, we are going through the steps to create your own dashboard and deploy it on Netlify. Netlify is a hosting platform. It runs your front-end on CDN and backend on serverless Lambda. This architecture allows easy deployment and scalable service. There is no server to maintain. You don't have to worry about scaling your server cluster.
+
+Netlify runs the Vida software to serve your dashboard. The dashboard will request a JSON specification file from Github. You can change the specification file on github to update your dashboard.
+
+We will go through 4 steps:
+
+- Create accounts.
+- Create your dashboard on [vida.io](https://vida.io).
+- Host your dashboard specification file on [gist.github.com](https://gist.github.com/).
+- Deploy and configure your dashboard on [Netlify](https://www.netlify.com/).
+
+## Account Setup
+
+You don't need to get an account for vida.io. You can use vida.io dashboard editor without an account. But we need to create accounts on 3 hosting services. You can get started with the free accounts.
+
+- [Heroku](https://www.heroku.com/): You need to create a stub backend database for your deployment.
+- [Github](https://github.com/): We will host the JSON specification file on Github.
+- [Netlify](https://www.netlify.com/): We will deploy Vida software and configure a custom domain on Netlify.
+
+## Create a Dashboard JSON Specification
+
+You can use the [Dashboard Create](https://vida.io/dashboards/create) tool to draft your JSON file. For further references, see [JSON Format documentation](https://docs.vida.io/src-json-format-overview). We have a few examples to use for references:
+
+- [Example Viz](https://vida.io/dashboards/ck9thrfc600020umr2bfuxi2s): A simple dashboard example.
+- [Covid Trend in the United States](https://vida.io/dashboards/ck9thqbxl00000umrd0u2pmdj): This dashboard pulls live data from covidtracking.com to render COVID-19 trend.
+- [Covid Cases in the United States](https://vida.io/dashboards/ck9thr10b00010umrlj7fed4s): This dashboard pulls live data from covidtracking.com to render COVID-19 cases.
+
+## Host the Dashboard JSON Specification
+
+After you finish editing your dashboard, you can upload your file to [gist.github.com](https://gist.github.com/)
+
+For the rest of this tutorial, we will use the [Covid Trend in the United States](https://vida.io/dashboards/ck9thqbxl00000umrd0u2pmdj) JSON file. I upload the example JSON file here: https://gist.github.com/dnprock/ebc9ec7629c2957d5d6d61c317d6688e.
+
+## Deploy to Netlify
+
+Before deployment, you need to fork the Vida repository to your own Github account.
+
+https://github.com/vidalab/vida
+
+Vida is built on top of RedwoodJS. The RedwoodJS development team has written a guide on how to deploy RedwoodJS to Netlify. We recommend Heroku for backend database. See the [RedwoodJS deployment guide](https://redwoodjs.com/tutorial/deployment) for further instructions.
+
+When you create your dashboard site in Netlify, select your forked repository of Vida.
+
+After you finish setting up your site, you can now point your dashboard to your JSON specification.
+
+- Open your site in Netlify.
+- Select Settings Tab - Build & deploy - Environment.
+- Click on Edit variables button.
+- Add Key: VIZ_JSON - Value: [Your gist URL]. For my example, the gist URL is: https://gist.github.com/dnprock/ebc9ec7629c2957d5d6d61c317d6688e.
+- To refresh your dashboard deployment, select Deploys Tab - Trigger deploy - Deploy site.
+
+Once your site build finishes, you should be able to see your dashboard live on Netlify. You can change the content of your dashboard in Github and refresh the site. Here's a deployment of my example on Netlify: https://pedantic-keller-ec3fcd.netlify.app/.
+
+With Netlify, you can configure custom domain for your dashboard. For this information, see Netlify's [custom domain](https://docs.netlify.com/domains-https/custom-domains/) guide.

@@ -49,6 +49,11 @@
             "value": "Getting Started"
           },
           {
+            "slug": "create-a-json-dashboard",
+            "depth": 2,
+            "value": "Create a JSON dashboard"
+          },
+          {
             "slug": "run-vida-for-development",
             "depth": 2,
             "value": "Run Vida for development"
@@ -202,6 +207,26 @@
             "slug": "create-a-dashboard-and-deploy-to-netlify",
             "depth": 1,
             "value": "Create a Dashboard and Deploy to Netlify"
+          },
+          {
+            "slug": "account-setup",
+            "depth": 2,
+            "value": "Account Setup"
+          },
+          {
+            "slug": "create-a-dashboard-json-specification",
+            "depth": 2,
+            "value": "Create a Dashboard JSON Specification"
+          },
+          {
+            "slug": "host-the-dashboard-json-specification",
+            "depth": 2,
+            "value": "Host the Dashboard JSON Specification"
+          },
+          {
+            "slug": "deploy-to-netlify",
+            "depth": 2,
+            "value": "Deploy to Netlify"
           }
         ]
       }
