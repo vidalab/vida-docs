@@ -1,0 +1,129 @@
+---
+name: Create a Dashboard with Vida.js and Cube.js
+menu: Tutorials
+---
+
+# Create a Dashboard with Vida.js and Cube.js
+
+Vida.js is an open source data visualization package. Users can create compelling data dashboards with a JSON schema.
+
+Cube.js is an open source data analytics framework. It allows users to retrieve and aggregate from complex data sources. It is visualization agnostic. It allows us to interface with complex database backend.
+
+In this tutorial, we'll create a stand-alone React data application. It uses Cube.js for data retrieval and aggregation. On the frontend, it uses Vida.js to render visualizations.
+
+The code for this tutorial is available on [github](https://github.com/vidalab/vida-react-cube).
+
+We'll follow a Cube.js tutorial for the basic setup. You can read more about it [here](https://cube.dev/blog/cubejs-open-source-dashboard-framework-ultimate-guide/).
+
+## Create a Cube.js backend
+
+We'll run through the necessary steps quickly. For more details, see the cube.js tutorial.
+
+- Create a test database in PostgreSQL.
+
+```bash
+curl http://cube.dev/downloads/ecom-dump.sql > ecom-dump.sql
+createdb ecom
+psql --dbname ecom -f ecom-dump.sql
+```
+
+- Install the cube-js CLI and create a backend project.
+
+```bash
+npm install -g cubejs-cli
+cubejs create dashboard-backend -d postgres
+cd dashboard-backend
+```
+
+- Update the .env file of the dashboard-backend project.
+
+```bash
+CUBEJS_API_SECRET=SECRET
+CUBEJS_DB_TYPE=postgres
+CUBEJS_DB_NAME=ecom
+```
+
+- Generate the table schemas and run the backend server.
+
+```bash
+cubejs generate -t users,orders
+npm run dev
+```
+
+After this, you can access Cube.js backend at [http://localhost:4000](http://localhost:4000).
+
+## Create React Data Dashboard with Vida.js
+
+Create a new React app. Install Cube.js and Vida.js packages.
+
+```bash
+npx create-react-app vida-react-cube
+# install vidajs and cubejs packages
+yarn add @cubejs-client/core @cubejs-client/react vidajs
+```
+
+Vida.js uses tailwindcss. We need to add the compiled css file to the html head section.
+
+```html
+<title>React App</title>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+```
+
+Open App.js file and update the content to the below file.
+
+https://github.com/vidalab/vida-react-cube/blob/master/src/App.js
+
+We make the following changes to retrieve data from Cube.js backend. We render the data with Vida.js.
+
+```javascript
+
+// Initialize Cube.js API
+const cubejsApi = cubejs(process.env.REACT_APP_CUBEJS_TOKEN, {
+  apiUrl: process.env.REACT_APP_API_URL
+});
+
+// This function renders a Vida.js dashboard
+const renderVida = (resultSet) => {
+  const vizJson = {
+    "name": "Orders Example",
+    "description": "Orders Example",
+    "columns": 2,
+    "rows": 2,
+    "data": [
+      ...
+    ],
+    "charts"; [
+      ...
+    ]
+  }
+
+  return (
+    <div style={{width: "100%", height: "100%"}}>
+      <VidaComponent vizData={vizJson} />
+    </div>
+  );
+}
+
+// This function use Cube.js QueryRenderer to query Order.count.
+// Then it calls the renderVida function to render the dashboard.
+function App() {
+  ...
+}
+
+export default App;
+```
+
+Before running the React web server, we need to modify Cube.js client-side environment variables.
+
+```bash
+REACT_APP_CUBEJS_TOKEN=[Copy Your Token Here]
+REACT_APP_API_URL=http://localhost:4000/cubejs-api/v1
+```
+
+We can now start the React application server. The application is available at [http://localhost:3000](http://localhost:3000).
+
+```bash
+yarn start
+```
+
+For more dashboard examples, visit [vida.io](https://vida.io).
