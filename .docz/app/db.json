@@ -67,78 +67,6 @@
       }
     },
     {
-      "key": "src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
-      "value": {
-        "name": "Create a Dashboard and Deploy to Netlify",
-        "menu": "Tutorials",
-        "id": "2ac6b3c88b637c1b602fea99042553d8",
-        "filepath": "src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "src-tutorials-create-a-dashboard-and-deploy-to-netlify",
-        "route": "/src-tutorials-create-a-dashboard-and-deploy-to-netlify",
-        "headings": [
-          {
-            "slug": "create-a-dashboard-and-deploy-to-netlify",
-            "depth": 1,
-            "value": "Create a Dashboard and Deploy to Netlify"
-          },
-          {
-            "slug": "account-setup",
-            "depth": 2,
-            "value": "Account Setup"
-          },
-          {
-            "slug": "create-a-dashboard-json-specification",
-            "depth": 2,
-            "value": "Create a Dashboard JSON Specification"
-          },
-          {
-            "slug": "host-the-dashboard-json-specification",
-            "depth": 2,
-            "value": "Host the Dashboard JSON Specification"
-          },
-          {
-            "slug": "deploy-to-netlify",
-            "depth": 2,
-            "value": "Deploy to Netlify"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/tutorials/create-a-dashboard-with-vida-js-and-cube-js.mdx",
-      "value": {
-        "name": "Create a Dashboard with Vida.js and Cube.js",
-        "menu": "Tutorials",
-        "id": "bb3d397f7165e6bdd04d5c7bbacf27a0",
-        "filepath": "src/tutorials/create-a-dashboard-with-vida-js-and-cube-js.mdx",
-        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-a-dashboard-with-vida-js-and-cube-js.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "src-tutorials-create-a-dashboard-with-vida-js-and-cube-js",
-        "route": "/src-tutorials-create-a-dashboard-with-vida-js-and-cube-js",
-        "headings": [
-          {
-            "slug": "create-a-dashboard-with-vidajs-and-cubejs",
-            "depth": 1,
-            "value": "Create a Dashboard with Vida.js and Cube.js"
-          },
-          {
-            "slug": "create-a-cubejs-backend",
-            "depth": 2,
-            "value": "Create a Cube.js backend"
-          },
-          {
-            "slug": "create-react-data-dashboard-with-vidajs",
-            "depth": 2,
-            "value": "Create React Data Dashboard with Vida.js"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/json-format/charts.mdx",
       "value": {
         "name": "Charts",
@@ -258,6 +186,78 @@
             "slug": "charts",
             "depth": 3,
             "value": "Charts"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
+      "value": {
+        "name": "Create a Dashboard and Deploy to Netlify",
+        "menu": "Tutorials",
+        "id": "2ac6b3c88b637c1b602fea99042553d8",
+        "filepath": "src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-a-dashboard-and-deploy-to-netlify.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-tutorials-create-a-dashboard-and-deploy-to-netlify",
+        "route": "/src-tutorials-create-a-dashboard-and-deploy-to-netlify",
+        "headings": [
+          {
+            "slug": "create-a-dashboard-and-deploy-to-netlify",
+            "depth": 1,
+            "value": "Create a Dashboard and Deploy to Netlify"
+          },
+          {
+            "slug": "account-setup",
+            "depth": 2,
+            "value": "Account Setup"
+          },
+          {
+            "slug": "create-a-dashboard-json-specification",
+            "depth": 2,
+            "value": "Create a Dashboard JSON Specification"
+          },
+          {
+            "slug": "host-the-dashboard-json-specification",
+            "depth": 2,
+            "value": "Host the Dashboard JSON Specification"
+          },
+          {
+            "slug": "deploy-to-netlify",
+            "depth": 2,
+            "value": "Deploy to Netlify"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/tutorials/create-a-dashboard-with-vida-js-and-cube-js.mdx",
+      "value": {
+        "name": "Create a Dashboard with Vida.js and Cube.js",
+        "menu": "Tutorials",
+        "id": "bb3d397f7165e6bdd04d5c7bbacf27a0",
+        "filepath": "src/tutorials/create-a-dashboard-with-vida-js-and-cube-js.mdx",
+        "fullpath": "/Users/phuocdo/Workspace/redwoodjs/vida-docs/src/tutorials/create-a-dashboard-with-vida-js-and-cube-js.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-tutorials-create-a-dashboard-with-vida-js-and-cube-js",
+        "route": "/src-tutorials-create-a-dashboard-with-vida-js-and-cube-js",
+        "headings": [
+          {
+            "slug": "create-a-dashboard-with-vidajs-and-cubejs",
+            "depth": 1,
+            "value": "Create a Dashboard with Vida.js and Cube.js"
+          },
+          {
+            "slug": "create-a-cubejs-backend",
+            "depth": 2,
+            "value": "Create a Cube.js backend"
+          },
+          {
+            "slug": "create-react-data-dashboard-with-vidajs",
+            "depth": 2,
+            "value": "Create React Data Dashboard with Vida.js"
           }
         ]
       }
